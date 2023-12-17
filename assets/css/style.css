@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+ul { 
+    list-style: none; padding-left: 5px; 
+}
+
+a { 
+    color:black; text-decoration: none;
+}
+
+header {
+    margin-left: 10px;
+    height: 100px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    border: 2px solid rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+
+main > .right {
+    margin-top: 100px;
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.right > nav > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.right > nav > ul > li {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+}
+
+main > .left {
+    margin-top: 100px;
+    border-right: solid 1px #cdcdcd;
+}
+
+.left > nav > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.left > nav > ul > li {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+}
+
+figure {
+    text-align: center;
+}
+
+main > section {
+    margin-top: 100px;
+}
+
+main > section > article > h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+main > section > article > p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > section > article > blockquote {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 500px;
+    margin-right: 0px;
+    font-style: italic;
+}
+
+main > section > article > figure > img {
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+}
+
+main > section > article > figure > figcaption {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+main > section > article > figure > cite {
+    margin-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > h2 {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-weight: bolder;
+}
